@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width: 300px;
+            margin:0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        .box>li{
+            float:left;
+            width: 148px;
+            text-align: center;
+            border:1px solid blue;
+            background:blue;
+            color:white;
+            line-height: 40px;
+        }
+
+        .box>li:hover{
+            background:lightblue;
+        }
+
+        .box>li>ul {
+            display: none;
+            background:white;
+            color:black;
+        }
+        .box>li:hover ul{
+            display: block;
+        }
+
+        .box>li li:hover{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="box">
+        <li >视频教程
+            <ul>
+                <li>全部视频教程</li>
+                <li>HTML5视频教程</li>
+                <li>JAVA视频教程</li>
+                <li>python视频教程</li>
+            </ul>
+        </li>
+        <li >认证考试
+            <ul>
+                <li>pmp</li>
+                <li>红帽</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
